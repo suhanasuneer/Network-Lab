@@ -1,0 +1,117 @@
+I. a) Create a directory named lab1, move into it, create a file data.txt, write some content  using echo, and display it using cat.
+(Commands: mkdir, cd, echo, cat)
+
+	mca@MCA51:~/Suhaa S1/Netlab$ mkdir lab1
+	mca@MCA51:~/Suhaa S1/Netlab$ cd lab1
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ echo "Linux Lab Experiment" > data.txt
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ cat data.txt
+	 Linux Lab Experiment
+
+b) Display the last 10 lines of a file and count the number of empty lines. (Commands: tail,  grep '^$')
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ cat >> data.txt
+	Ubuntu
+	Network lab
+	JAVA Lab
+	DBMS Lab
+	Python
+	C lab
+	Web lab
+
+	Computer Network
+	OPerating Systems
+	Database system
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ tail -n 10 data.txt
+	Network lab
+	JAVA Lab
+	DBMS Lab
+	Python
+	C lab
+	Web lab
+ 
+	Computer Network
+	OPerating Systems
+	Database system
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ grep '^$' data.txt | wc -l
+	1
+
+c)  Create a new user student1, set password, create a script file test.sh, change its ownership to student1, and grant execute permission 	only to the owner. (Commands: useradd, passwd, chown, chmod)
+
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ sudo useradd student1
+	[sudo] password for mca: 
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ sudo passwd student1
+	New password: 
+	Retype new password: 
+	passwd: password updated successfully
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ sudo touch test.sh
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ sudo chown student1 test.sh
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ sudo chmod 700 test.sh
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ ls -l test.sh
+	-rw-r--r-- 1 student1 root 0 Mar  6 15:08 test.sh
+
+II.
+	a) Create a file students.txt, insert multiple lines using cat, and display lines containing the word "MCA". (Commands: cat, grep)
+	
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ cat > students.txt
+	 Suhana MCA
+	 Shifna BCA
+	 Fathima BCA	
+	 Beema MCA
+	 Ciyana MCA 
+	Ciyana MCA
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ grep 'MCA' students.txt
+	 Suhana MCA
+	 Beema MCA
+	 Ciyana MCA
+
+b) Copy students.txt to backup.txt, rename it to final.txt, and delete the original file. (Commands: cp, mv, rm)
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ cp students.txt backup.txt
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ mv backup.txt final.txt
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ rm students.txt
+	mca@MCA51:~/Suhaa S1/Netlab/lab1$ ls
+	data.txt  final.txt  test.sh
+	
+c) Generate an SSH key pair and copy it to a remote system for password-less login. (Commands: ssh-keygen, ssh-copy-id, ssh)
+
+	Generating public/private rsa key pair.	
+	Enter file in which to save the key (/home/mca/.ssh/id_rsa): 
+	Enter passphrase (empty for no passphrase): 
+	Enter same passphrase again: 
+	Your identification has been saved in /home/mca/.ssh/id_rsa
+	Your public key has been saved in /home/mca/.ssh/id_rsa.pub
+
+III.
+a) Count the number of words and lines in a file, then display the first 3 lines. (Commands: wc, head)
+	mca@MCA51:~/Suhaa S1/Netlab$ wc mcaa.txt
+	 4  5 24 mcaa.txt
+	mca@MCA51:~/Suhaa S1/Netlab$ head -n 3 mcaa.txt
+	java
+	network
+	IPR
+b) Create 3 files and compress them into archive.tar, then extract into a new directory. (Commands: touch, tar, mkdir)
+	mca@MCA51:~/Suhaa S1/Netlab$ touch file1.txt file2.txt file3.txt
+	mca@MCA51:~/Suhaa S1/Netlab$ tar -cvf archive.tar file1.txt file2.txt file3.txt
+	file1.txt
+	file2.txt
+	file3.txt	
+	mca@MCA51:~/Suhaa S1/Netlab$ mkdir extracted_files
+	mca@MCA51:~/Suhaa S1/Netlab$ tar -xvf archive.tar -C extracted_files
+	file1.txt
+	file2.txt
+	file3.txt
+	mca@MCA51:~/Suhaa S1/Netlab$ ls extracted_files
+	file1.txt  file2.txt  file3.txt
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
