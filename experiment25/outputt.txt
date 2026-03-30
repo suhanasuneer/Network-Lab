@@ -1,0 +1,19 @@
+Experiment 25:  Function programs
+
+1)Add two numbers using function
+mca@MCA51:~/suhaa s1/Network lab/experiment25$ chmod +x sum.sh
+mca@MCA51:~/suhaa s1/Network lab/experiment25$ ./sum.sh
+ Enter two numbers: 5 5
+Sum = 10
+
+2)Check Even or Odd using Function
+mca@MCA51:~/suhaa s1/Network lab/experiment25$ chmod +x Evenorodd.sh
+mca@MCA51:~/suhaa s1/Network lab/experiment25$ ./Evenorodd.sh
+Enter a number: 22
+22 is Even
+
+3)Factorial using Function
+mca@MCA51:~/suhaa s1/Network lab/experiment25$ chmod +x factorial.sh
+mca@MCA51:~/suhaa s1/Network lab/experiment25$ ./factorial.sh
+Enter a number: 5
+Factorial = 120

@@ -1,0 +1,59 @@
+1)Right Triangle Star Pattern
+
+mca@MCA51:~/suhaa s1/Network lab/experiment24$ chmod +x Right_triangle.sh
+mca@MCA51:~/suhaa s1/Network lab/experiment24$ ./Right_triangle.sh
+Enter number of rows:
+5
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+2)Inverted Triangle
+mca@MCA51:~/suhaa s1/Network lab/experiment24$ chmod +x Inverted_triangle.sh
+mca@MCA51:~/suhaa s1/Network lab/experiment24$ ./Inverted_triangle.sh
+Enter number of rows:5
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+3)Pyramid Pattern
+mca@MCA51:~/suhaa s1/Network lab/experiment24$ chmod +x pyramid_pattern.sh
+mca@MCA51:~/suhaa s1/Network lab/experiment24$ ./pyramid_pattern.sh
+Enter number of rows:4
+   * 
+  * * 
+ * * * 
+* * * * 
+
+4)Number Triangle
+mca@MCA51:~/suhaa s1/Network lab/experiment24$ chmod +x number_triangle.sh
+mca@MCA51:~/suhaa s1/Network lab/experiment24$ ./number_triangle.sh
+Enter number of rows:4
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+
+5) Inverted number Triangle
+mca@MCA51:~/suhaa s1/Network lab/experiment24$ chmod +x inverted_num_triangle.sh
+mca@MCA51:~/suhaa s1/Network lab/experiment24$ ./inverted_num_triangle.sh
+Enter number of rows: 4
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+
+6)Floyd’s Triangle
+mca@MCA51:~/suhaa s1/Network lab/experiment24$ chmod +x floyd_triangle.sh
+mca@MCA51:~/suhaa s1/Network lab/experiment24$ ./floyd_triangle.sh
+Enter number of rows: 5
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
